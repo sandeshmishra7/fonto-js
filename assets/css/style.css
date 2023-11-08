@@ -206,8 +206,19 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+
+header {
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 header .wrapper {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fafafa;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +250,7 @@ nav {
   padding: 8px 15px;
   margin: 2px 9px;
   margin-right: 7px;
-  color: #535154;
+  color: #fafafa;
   font-size: 17px;
   font-weight: 500;
 }
@@ -250,7 +261,7 @@ nav {
   content: "\f0d7";
   font-family: "fontAwesome";
   margin-left: 10px;
-  color: #dc6227;
+  color: #fafafa;
 }
 
 .header-icons {
@@ -267,7 +278,7 @@ nav {
   font-family: "fontAwesome";
   text-indent: 0;
   padding: 0 5px;
-  color: #000;
+  color: #fafafa;
   cursor: pointer;
   float: right;
 }
@@ -286,11 +297,22 @@ nav {
 /*=================================
   Header styling ends here
 =================================*/
-
+/* 1516x681 */
 /*=================================
   main styling starts here
 =================================*/
+/* banner start */
 
+.banner {
+  background: url('https://www.dummyimage.com/1516x681/232330/fff') no-repeat center center/cover;
+  padding-top: 680px;
+}
+
+.banner p {
+  text-indent: -9999px;
+}
+
+/* banner end */
 
 
 
