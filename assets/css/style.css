@@ -245,10 +245,11 @@ nav {
   display: flex;
   align-items: center;
   padding: 47px 0 46px;
+  letter-spacing: 1px;
 }
 
 .nav-list {
-  margin-right: 32px;
+  margin-right: 16px;
 }
 
 .nav-list li a {
@@ -263,16 +264,17 @@ nav {
 .nav-list li:nth-child(1) a::after,
 .nav-list li:nth-child(2) a::after,
 .nav-list li:last-child a::after {
+  margin-left: 10px;
   content: "\f0d7";
   font-family: "fontAwesome";
-  margin-left: 10px;
   color: #fafafa;
+  font-size: 10px;
 }
 
 .header-icons {
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .header-icons li a {
@@ -290,13 +292,13 @@ nav {
 
 .bag a::before {
   content: "\f290";
-  font-size: 35px;
+  font-size: 30px;
   margin-right: 5px;
 }
 
 .search a::before {
   content: "\f002";
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /*=================================
@@ -337,12 +339,14 @@ nav {
   justify-content: space-between;
 }
 
-.left, .right {
+.left,
+.right {
   display: flex;
   flex-direction: column;
 }
 
-.left li img, .right li img {
+.left li img,
+.right li img {
   box-shadow: 10px 10px 5px #6d7e87;
 }
 
