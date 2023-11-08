@@ -364,6 +364,18 @@ nav {
 
 /* designs end */
 
+/* testimonial start */
+
+.slides {
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+/* testimonial end */
+
 /*=================================
   main styling ends here
 =================================*/
