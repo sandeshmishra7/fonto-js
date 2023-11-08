@@ -203,6 +203,11 @@ li {
   margin: 0 auto;
 }
 
+.heading {
+  color: #222222;
+  font-size: 56px;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -301,6 +306,7 @@ nav {
 /*=================================
   main styling starts here
 =================================*/
+
 /* banner start */
 
 .banner {
@@ -314,11 +320,45 @@ nav {
 
 /* banner end */
 
+/* designs start */
 
+.designs {
+  padding-top: 100px;
+  background-color: #b4c3cb;
+}
 
+.designs .heading {
+  margin-bottom: 66px;
+  text-align: center;
+}
 
+.design-img {
+  display: flex;
+  justify-content: space-between;
+}
 
+.left, .right {
+  display: flex;
+  flex-direction: column;
+}
 
+.left li img, .right li img {
+  box-shadow: 10px 10px 5px #6d7e87;
+}
+
+.left li {
+  margin-bottom: 20px;
+}
+
+.right li:first-child {
+  margin-bottom: 20px;
+}
+
+.right {
+  margin-bottom: 198px;
+}
+
+/* designs end */
 
 /*=================================
   main styling ends here
