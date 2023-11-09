@@ -369,9 +369,10 @@ nav {
 /* testimonial start */
 
 .testimonial {
+  padding: 72px 0 0;
+  margin-bottom: 94px;
   position: relative;
   background-color: #222222;
-  padding: 72px 0 0;
 }
 
 .testimonial .wrapper {
@@ -470,11 +471,102 @@ figcaption {
   float: right;
 }
 
-.prev-next, .test-btns {
+.prev-next,
+.test-btns {
   padding-bottom: 13px;
 }
 
 /* testimonial end */
+
+/* authors start */
+
+.author-list {
+  margin-bottom: 111px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-list li img {
+  border-radius: 50%;
+  margin-bottom: 13px;
+}
+
+.author-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 23px;
+  text-align: center;
+}
+
+.author-name {
+  color: #374153;
+}
+
+.prof {
+  color: #f6fbf3;
+}
+
+/* authors end */
+
+/* top start */
+
+.top {
+  padding-bottom: 150px;
+}
+
+.top .wrapper,
+.authors .wrapper {
+  max-width: 1440px;
+  width: 93%;
+}
+
+.design-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-list li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 23%;
+  box-shadow: 7px 7px 3px #6d7e87;
+  background-color: #fff;
+  line-height: 35px;
+  padding-bottom: 26px;
+}
+
+.design-list li:last-child {
+  margin-right: 2%;
+}
+
+.design-list li img {
+  margin-bottom: 15px;
+}
+
+.design-list li a,
+.design-list li span {
+  font-size: 18px;
+  margin-left: 16px;
+}
+
+.design-list li a {
+  color: #26222e;
+}
+
+.design-list li span {
+  color: #ff889c;
+}
+
+.design-list li:last-child .price {
+  text-decoration: line-through;
+}
+
+.design-list li:last-child .discount {
+  text-decoration: none;
+}
+
+/* top end */
 
 /*=================================
   main styling ends here
@@ -484,11 +576,42 @@ figcaption {
   footer styling starts here
 =================================*/
 
+.footer-top {
+  background-color: #222222;
+}
 
+.top-list {
+  padding: 62px 0 124px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.top-list .heading {
+  margin-bottom: 26px;
+  color: #fffbf6;
+  font-family: monospace;
+  font-size: 22px;
+}
 
+.top-list li {
+  flex-basis: 25%;
+}
 
+.about .para {
+  color: #fdfef0;
+  line-height: 22px;
+}
 
+.top-list li:last-child {
+  flex-basis: 17.5%;
+  margin-right: 12%;
+}
+
+.sponsor img {
+  max-width: 100%;
+  border: 1px solid #fdfef0;
+  border-top: 0;
+}
 
 /*=================================
   footer styling ends here
