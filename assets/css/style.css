@@ -210,6 +210,10 @@ li {
   font-weight: bold;
 }
 
+.transition-ease {
+  transition: .3s all ease;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -371,12 +375,12 @@ nav {
 .testimonial {
   padding: 72px 0 0;
   margin-bottom: 94px;
-  position: relative;
   background-color: #222222;
 }
 
 .testimonial .wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }
@@ -410,8 +414,8 @@ nav {
 
 .apostrophe {
   position: absolute;
-  top: 13%;
-  left: 4.5%;
+  top: -10%;
+  left: 2%;
 }
 
 figcaption {
@@ -422,7 +426,7 @@ figcaption {
 .prev-next {
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 17.4%;
+  left: 15.4%;
   bottom: 1%;
 }
 
@@ -613,10 +617,93 @@ figcaption {
   border-top: 0;
 }
 
+.footer-low {
+  background-color: #000;
+}
+
+.footer-low .wrapper {
+  padding: 3px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list li a {
+  text-indent: -9999px;
+}
+
+.social-list a::before {
+  color: #b4c3cb;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.facebook a::before,
+.twitter a::before,
+.youtube a::before,
+.instagram a::before {
+  content: "\f082";
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.twitter a::before {
+  content: "\f099";
+}
+
+.youtube a::before {
+  content: "\f167";
+}
+
+.instagram a::before {
+  content: "\f16d";
+}
+
+.policy li:last-child {
+  border-left: 1px solid #b4c3cb;
+}
+
+.policy li a {
+  margin: 6px;
+  font-size: 15px;
+  color: #b4c3cb;
+}
+
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
+@media only screen and (min-width: 995px) {
+
+  /* hover effects start */
+
+  .nav-list li a:hover,
+  .nav-list li a:hover::after,
+  .social-list li a:hover::before,
+  .footer-low a:hover, .design-list li a:hover {
+    color: #fe7458;
+    transition: .3s all ease;
+  }
+
+  .header-icons li a:hover::before {
+    color: #fe7458;
+    transition: .3s all ease;
+  }
+
+  .design-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s all ease;
+  }
+
+  .slider-btns a:hover::after {
+    background-color: #f6fbf3;
+    transition: .3s all ease;
+  }
+
+  /* hover effects end */
+
+}
