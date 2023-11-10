@@ -709,6 +709,25 @@ figcaption {
 
 }
 
+@media only screen and (max-width: 1240px) {
+  .design-img {
+    flex-direction: column;
+  }
+
+  .active-slide .para {
+    font-size: 24px;
+  }
+
+  .author-list {
+    flex-wrap: wrap;
+  }
+
+  .author-list li {
+    margin-bottom: 30px;
+    flex-basis: 30%;
+  }
+}
+
 @media only screen and (max-width: 995px) {
 
   .heading {
@@ -848,5 +867,38 @@ figcaption {
   }
 
   /* designs end */
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .top-list {
+    flex-direction: column;
+  }
+
+  .top-list li:last-child {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .active-slide .para {
+    font-size: 17px;
+  }
+
+  .design-list li span {
+    font-size: 15px;
+  }
+
+  .footer-low .wrapper {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .social-list {
+    margin-bottom: 20px;
+  }
 
 }
